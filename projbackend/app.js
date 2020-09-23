@@ -12,6 +12,15 @@ app.use(bodyParser.json());
 app.use(cookieParser());
 app.use(cors());
 
+const authRoutes = require("./routes/auth"); 
+
+app.use("/api", authRoutes);
+
+app.get("/admin", (req,res) =>{
+    res.send("hi admin");
+});
+
+
 // DB connection
  const mongoose = require("mongoose");
  mongoose
