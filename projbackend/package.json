@@ -16,6 +16,7 @@
     "express": "^4.17.1",
     "express-jwt": "^6.0.0",
     "mongoose": "^5.10.6",
-    "nodemon": "^1.19.4"
+    "nodemon": "^1.19.4",
+    "uuid": "^3.3.3"
   }
 }
